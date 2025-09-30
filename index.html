@@ -3,31 +3,272 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Genia del Glitch</title>
+    <title>Ruth Daniela Aguirre </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Skip link para accesibilidad -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Fondo con efecto Kintsugi -->
   <div class="kintsugi-bg">
     <div class="gold-crack line-1"></div>
     <div class="gold-crack line-2"></div>
-    
     <div class="gold-crack organic-1"></div>
     <div class="gold-crack organic-2"></div>
   </div>
-  
-  <div class="container">
-    <div class="inner-glow"></div>
-    <h1> Ruth Daniela <span class="glitch-effect" data-text="La Genia del Glitch"> Aguirre</span></h1>
-    <p class="instruction">Pulsa el botón y di: <strong>“Dime quién es Daniela”</strong></p>
-    <button onclick="escuchar()">
-      <span class="button-content">
-        <span class="button-icon">🎙️</span>
-        <span class="button-text">Activar voz</span>
-      </span>
-      <span class="button-glow"></span>
-    </button>
-  </div>
 
+  <!-- Navegación -->
+  <header>
+    <nav>
+      <div class="logo">Ruth Daniela Aguirre</div>
+      <button class="mobile-menu-btn" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#technologies">Tecnologías</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#works">Experiencia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="main-content">
+    <!-- Sección Home/Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="inner-glow"></div>
+        <h1>Ruth Daniela <span class="glitch-effect" data-text="La Genia del Glitch">Aguirre</span></h1>
+        
+       
+        <a href="#about" class="btn" style="margin-left: 15px;">
+          <span class="btn-content">
+            <span class="btn-text">Conóceme</span>
+            <span class="btn-icon">↓</span>
+          </span>
+          <span class="btn-glow"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sección About Me -->
+    <section id="about">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <h3>La chica del Glitch</h3>
+          <p>Soy una desarrolladora apasionada por crear experiencias digitales únicas que combinan la estética del glitch art con funcionalidades innovadoras.</p>
+          <p>Mi enfoque se centra en desarrollar interfaces que no solo sean visualmente atractivas, sino también intuitivas y accesibles para todos los usuarios.</p>
+          <p>Creo en el poder del código como medio de expresión artística y en la importancia de la tecnología para conectar a las personas.</p>
+          <p>Cuando no estoy programando, me dedico a explorar nuevas tendencias en diseño, experimentar con arte digital y contribuir a proyectos de código abierto.</p>
+        </div>
+        <div class="voice-section" data-aos="fade-left">
+          <h3>Conóceme con voz</h3>
+          <br>
+          <p>Activa el reconocimiento de voz para escuchar mi presentación personal.</p>
+          <br>
+          <p class="instruction">Pulsa el botón y di: <strong>"¿Quién es Daniela?"</strong></p>
+         <br> 
+          <button onclick="escuchar()" class="btn">
+            <span class="btn-content">
+              <span class="btn-icon">🎙️</span>
+              <span class="btn-text">Activar voz</span>
+            </span>
+            <span class="btn-glow"></span>
+          </button>
+          <div id="voice-status" style="margin-top: 20px; min-height: 40px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Technologies -->
+    <section id="technologies">
+      <h2 class="section-title">Tecnologías</h2>
+      <div class="tech-categories">
+        <div class="tech-category" data-aos="zoom-in">
+          <h3>Frontend</h3>
+          <div class="tech-list">
+            <span class="tech-item">HTML5</span>
+            <span class="tech-item">CSS3</span>
+            <span class="tech-item">JavaScript</span>
+            <span class="tech-item">TypeScript</span>
+            <span class="tech-item">React</span>
+            <span class="tech-item">Flutter</span>
+           
+            <span class="tech-item">Bootstrap</span>
+            <span class="tech-item">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="tech-category" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Backend</h3>
+          <div class="tech-list">
+            <span class="tech-item">Node.js</span>
+            <span class="tech-item">Express</span>
+            <span class="tech-item">NestJS</span>
+            <span class="tech-item">Python</span>
+            <span class="tech-item">FastApi</span>
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">Laravel</span>
+            <span class="tech-item">Java</span>
+            <span class="tech-item">Spring Boot</span>
+          </div>
+        </div>
+        <div class="tech-category" data-aos="zoom-in" data-aos-delay="200">
+          <h3>Bases de Datos</h3>
+          <div class="tech-list">
+            <span class="tech-item">MySQL</span>
+            <span class="tech-item">PostgreSQL</span>
+            <span class="tech-item">MongoDB</span>
+            <span class="tech-item">Supabase</span>
+            <span class="tech-item">Oracle</span>
+
+          </div>
+        </div>
+        <div class="tech-category" data-aos="zoom-in" data-aos-delay="300">
+          <h3>Herramientas</h3>
+          <div class="tech-list">
+            <span class="tech-item">Git</span>
+            <span class="tech-item">Docker</span>
+            <span class="tech-item">Figma</span>
+            <span class="tech-item">VS Code</span>
+            <span class="tech-item">Postman</span>
+            <span class="tech-item">Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+  <h2 class="section-title">Proyectos</h2>
+  <div class="projects-grid">
+    <!-- TUDU -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-img">
+        <i class="fas fa-tasks"></i>
+      </div>
+      <div class="project-content">
+        <h3>TUDU (To-Do por Voz)</h3>
+        <p>Aplicación de productividad controlada por voz que integra FastAPI, Whisper y MySQL para gestionar tareas adaptadas al estado emocional del usuario.</p>
+        <div class="project-tech">
+          <span>FastAPI</span>
+          <span>React</span>
+          <span>MySQL</span>
+        </div>
+        <div class="project-links">
+          <iframe src="https://player.vimeo.com/video/1089235255?h=f7c9b7c996" width="300" height="180" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <a href="https://github.com/RuthDanielaAguirre/TUDU?tab=readme-ov-file" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Código
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FemCoders Club -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="project-img">
+        <i class="fas fa-users"></i>
+      </div>
+      <div class="project-content">
+        <h3>FemCoders Club</h3>
+        <p>Comunidad y plataforma que impulsa a mujeres en tecnología con formación, networking y proyectos colaborativos.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Supabase</span>
+          <span>Tailwind</span>
+        </div>
+        <div class="project-links">
+          <a href="https://www.femcodersclub.com/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> WEB
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Happy Rental Bike -->
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="project-img">
+        <i class="fas fa-bicycle"></i>
+      </div>
+      <div class="project-content">
+        <h3>Happy Rental Bike</h3>
+        <p>Plataforma web para el alquiler de bicicletas en Barcelona, con reservas online, pasarela de pago y gestión de inventario.</p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>Stripe</span>
+          <span>Supabase</span>
+        </div>
+        <div class="project-links">
+          <a href="https://happyrentalbike.com/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> WEB
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Works/Experiencia -->
+<section id="works">
+  <h2 class="section-title">Experiencia</h2>
+  <div class="works-timeline">
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-content">
+        <span class="date">2024 - Presente</span>
+        <h3>Desarrolladora Full Stack · Bit Genius Ltd.</h3>
+        <p>Diseño y desarrollo de interfaces para proyectos internacionales, integrando APIs, pagos con Stripe y arquitecturas escalables.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-content">
+        <span class="date">2024</span>
+        <h3>Product Owner & Backend Architect · Bonita BCN</h3>
+        <p>Definición de base de datos en Supabase, políticas RLS y arquitectura backend para una plataforma de bienestar y formación facial.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-content">
+        <span class="date">2023 - 2024</span>
+        <h3>Safe and Safety Data Analyst · TELUS International</h3>
+        <p>Proyectos de análisis de datos y entrenamiento de IA aplicada a procesamiento de lenguaje natural.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-aos="fade-left">
+      <div class="timeline-content">
+        <span class="date">2023</span>
+        <h3>· FemCoders Club</h3>
+        <p>Colaboración en iniciativas para impulsar mujeres en tecnología, desarrollo de proyectos colaborativos y mentoría técnica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-link" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" class="social-link" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="#" class="social-link" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="social-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p class="copyright">© 2023 Ruth Daniela Aguirre. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
